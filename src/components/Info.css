@@ -1,11 +1,12 @@
 .infoContainer{
     width: 100%;
     height: 300px;
-    background-color: white;
+    background-color: #7d7575;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 100vh;
+
 }
 

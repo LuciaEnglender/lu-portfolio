@@ -1,0 +1,48 @@
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formTotal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formTotal > h1{
+    margin-bottom: 15px;
+}
+section{
+    background-color: #cda8af;
+    padding:20px 30px 30px 30px;
+    border-radius: 40px;
+}
+label{
+    font-size: large;
+    padding:10px 0 10px 0;
+}
+
+#name,
+#email{
+    height: 30px;
+    background-color: #5e5052;
+    color: white;
+    border: none
+}
+
+#message{
+    background-color: #5e5052;
+    color: white;
+    border: none
+}
+
+.boton-submit{
+    margin-top: 10px;
+    background-color: #5e5052;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: medium;
+    padding: 5px 0 5px 0;
+}

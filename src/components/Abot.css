@@ -1,10 +1,10 @@
 .aboutContainer{
     display: flex;
     justify-content: space-between;
-    background-color: white;
-    height: 70vh;
+    background-color:#cda8af;
+    height: 80vh;
     padding: 100px 0 100px 0;
-    color: black;
+    color: #2c2b4b;
 }
 
 .aboutText{
@@ -29,7 +29,6 @@
     display: flex;
     align-self: center;
     border-radius: 50%;
-    
 
 }
 

@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import CV from "../media/CV.pdf";
 import Particle from "./Particle";
+import ContactForm from "./ContactForm";
 
 function Footer() {
   return (
@@ -13,7 +14,7 @@ function Footer() {
         <div className="footer-info">
           <h1>Lucia Englender</h1>
           <div className="location">
-            <i class="fa-solid fa-location-dot"></i>
+            <i className="fa-solid fa-location-dot"></i>
             <p>Mar del Plata, Buenos Aires, Argentina</p>
           </div>
         </div>
@@ -42,6 +43,9 @@ function Footer() {
           </a>
         </div>
         <div className="design">Design with ♥ by Lucia</div>
+      </div>
+      <div className="contacto">
+        <ContactForm />
       </div>
     </footer>
   );

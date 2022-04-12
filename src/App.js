@@ -7,11 +7,11 @@ import About from "./components/About";
 import Slider from "./components/Slider";
 import Info from "./components/Info";
 import Footer from "./components/Footer";
+import Skiller from "./components/Skiller";
 
 function App() {
   const [scrollHeight, setScroll] = useState(0);
-  const [innerHeight, setInnerHeight] = useState(window.scrollY);
-  console.log(window);
+
   const handlerScroll = () => {
     let position = window.pageYOffset;
     setScroll(position);
@@ -21,12 +21,14 @@ function App() {
     window.addEventListener("scroll", handlerScroll);
   }, [scrollHeight]);
   return (
-    <div className="App">
-      <NavBar scroll={scrollHeight} height={innerHeight} />
+    <div className="App" id="App">
+      <NavBar scroll={scrollHeight} />
       <Cover />
       <About />
       <Slider />
+      <Skiller />
       <Info />
+
       <Footer />
     </div>
   );
