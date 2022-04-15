@@ -15,20 +15,52 @@
     padding: 0 100px 0 100px;
 }
 
-.aboutText > h3 {
+.aboutText > h1 {
     margin-bottom: 30px;
-    font-size: 28px;
+  
 }
 
 .aboutText > p {
     line-height: 1.5;
+
 }
 .picture > img{
     width: 45%;
     margin-left: 100px;
     display: flex;
     align-self: center;
+    justify-content: center;
+    
     border-radius: 50%;
 
 }
+.icons > a{
+    padding:0 5px 0 5px;
+}
 
+.icons{
+    margin-top: 25px;
+}
+
+@media (max-width: 960px){
+    .aboutContainer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .aboutText{
+        width: 90%;
+        margin: 0 auto;
+        padding: 40px 20px 50px 20px;
+        text-align: center;
+    }
+
+    .picture{
+        width: 100%;
+        margin: 50px ;
+    }
+}
+
+@media (max-width: 500px) {
+    .picture{margin: 0;}
+}

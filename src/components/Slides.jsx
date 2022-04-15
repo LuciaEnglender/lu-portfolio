@@ -3,6 +3,7 @@ import img1 from "../media/HomeMain.png";
 import img2 from "../media/img-seekerpro.jpg";
 import img3 from "../media/weatherApp.jpg";
 import "./Slides.css";
+
 const slidesInfo = [
   {
     src: img1,
@@ -27,10 +28,10 @@ const slidesInfo = [
   },
 ];
 
-const slides = slidesInfo.map((slide) => (
+const Slides = slidesInfo.map((slide) => (
   <div className="slideContainer">
     <div className="slideImg">
-      <img src={slide.src} alt={slide.alt} />
+      <img src={slide.src} alt={slide.alt} key={slide.img} />
     </div>
     <div className="slideText">
       <div className="slideTitle">
@@ -40,7 +41,7 @@ const slides = slidesInfo.map((slide) => (
         <span>{slide.desc}</span>
       </div>
       {/* <div className="info"> */}
-      <a href={slide.url} target="_blank" className="info">
+      <a href={slide.url} target="_blank" className="info" rel="noreferrer">
         Check it!
       </a>
       {/* </div> */}
@@ -48,4 +49,4 @@ const slides = slidesInfo.map((slide) => (
   </div>
 ));
 
-export default slides;
+export default Slides;

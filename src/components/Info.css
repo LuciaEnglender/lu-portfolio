@@ -10,3 +10,13 @@
 
 }
 
+.infoContainer > h1 {
+    color: #2c2b4b;
+    font-size: 50px;
+}
+
+
+@media (max-width:960px) {
+    .infoContainer{
+   margin-bottom: 200vh;} 
+}

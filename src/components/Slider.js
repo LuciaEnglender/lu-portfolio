@@ -11,15 +11,17 @@ function Slider() {
       <div className="carousel-title">
         <h2>My Projects</h2>
       </div>
-
-      <Carousel
-        plugins={["autoplay", "infinite", "arrows"]}
-        infinite
-        slides={Slides}
-        interval={3000}
-        offset
-        animationSpeed={1000}
-      />
+      <div className="slide-container">
+        <Carousel
+         
+          plugins={["autoplay", "infinite", "arrows"]}
+          infinite
+          slides={Slides}
+          interval={3000}
+          offset
+          animationSpeed={1000}
+        />
+      </div>
     </div>
   );
 }

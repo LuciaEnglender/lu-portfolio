@@ -36,7 +36,7 @@ const Skiller = () => {
       title: "NodeJS",
       url: NODEJS,
       alt: "NodeJS",
-      width: "70px",
+      width: "80px",
       height: "50px",
     },
 

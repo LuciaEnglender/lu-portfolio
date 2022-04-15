@@ -15,14 +15,9 @@ function Particle() {
   return (
     <>
       <Particles
-        width="100%"
-        height="100vh"
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
-          fullScreen: {
-            enable: true,
-          },
           particles: {
             number: {
               value: 109,

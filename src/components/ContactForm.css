@@ -8,12 +8,15 @@ form{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 100px;
+    margin-left: 50px;
 }
 
 .formTotal > h1{
     margin-bottom: 15px;
 }
 section{
+    width: 500px;
     background-color: #cda8af;
     padding:20px 30px 30px 30px;
     border-radius: 40px;
@@ -25,19 +28,27 @@ label{
 
 #name,
 #email{
+    display: flex;
+    flex-direction: column;
     height: 30px;
     background-color: #5e5052;
     color: white;
-    border: none
+    border: none;
+    width: 100%;
+    
 }
 
 #message{
     background-color: #5e5052;
     color: white;
-    border: none
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .boton-submit{
+    width: 100%;
     margin-top: 10px;
     background-color: #5e5052;
     border: 1px solid black;
@@ -46,3 +57,20 @@ label{
     font-size: medium;
     padding: 5px 0 5px 0;
 }
+
+@media (max-width: 700px) {
+    .formTotal{
+        width:20%
+    }
+}
+
+@media (max-width: 500px){
+    .formTotal > h1 {
+        font-size: 22px;
+    }
+    section{
+        width: 70vw;
+    }
+
+}
+
