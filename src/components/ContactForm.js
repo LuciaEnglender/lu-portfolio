@@ -23,7 +23,7 @@ const ContactForm = () => {
           data-netlify="true"
           method="POST"
           id="form-contact"
-          onSubmit={handleSubmit}
+          
         >
           <div>
             <div className="nombre">
@@ -57,7 +57,7 @@ const ContactForm = () => {
                 rows="10"
                 placeholder="Anything you want to say"
               />
-              <input type="submit" className="boton-submit" value="Send" />
+              <input type="submit" className="boton-submit" value="Send" onClick={handleSubmit} />
             </div>
           </div>
         </form>
