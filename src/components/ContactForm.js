@@ -6,11 +6,12 @@ const ContactForm = () => {
     <div className="formTotal">
       <h1>Leave me a message</h1>
       <section className="contact-form">
-        <form name="contact" data-netlify="true" method="POST">
+        <form name="contact" netlify data-netlify="true" method="POST">
           <div>
             <div className="nombre">
               <label for="name">Name</label>
               <input
+                value="contact"
                 name="name"
                 required
                 type="text"
@@ -21,6 +22,7 @@ const ContactForm = () => {
             <div className="mail">
               <label for="email">Email</label>
               <input
+                value="contact"
                 name="email"
                 required
                 type="text"
@@ -33,6 +35,7 @@ const ContactForm = () => {
             <div className="msg">
               <label for="message">Message</label>
               <textarea
+                value="contact"
                 name="message"
                 required
                 id="message"
