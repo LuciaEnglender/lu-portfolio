@@ -6,14 +6,9 @@ const ContactForm = () => {
     <div className="formTotal">
       <h1>Leave me a message</h1>
       <section className="contact-form">
-        <form
-          name="contact-portfolio"
-          netlify
-          data-netlify="true"
-          method="POST"
-        >
-          <div>
-            <div className="nombre">
+        <form name="contact-portfolio" method="POST" data-netlify="true">
+          <p>
+            <p className="nombre">
               <label for="name">
                 Name
                 <input
@@ -24,8 +19,8 @@ const ContactForm = () => {
                   placeholder="Your name"
                 ></input>{" "}
               </label>
-            </div>
-            <div className="mail">
+            </p>
+            <p className="mail">
               <label for="email">
                 Email
                 <input
@@ -36,10 +31,10 @@ const ContactForm = () => {
                   placeholder="Your email"
                 ></input>
               </label>
-            </div>
-          </div>
-          <div>
-            <div className="msg">
+            </p>
+          </p>
+          <p>
+            <p className="msg">
               <label for="message">
                 Message
                 <textarea
@@ -51,8 +46,8 @@ const ContactForm = () => {
                 />
               </label>
               <input type="submit" className="boton-submit" value="Send" />
-            </div>
-          </div>
+            </p>
+          </p>
         </form>
       </section>
     </div>
