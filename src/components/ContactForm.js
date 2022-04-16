@@ -8,11 +8,12 @@ const ContactForm = () => {
       <section className="contact-form">
         <form
           name="contact-portfolio"
-          method="POST"
-          data-netlify="true"
-          id="forma-contact"
+          netlify
+          netlify-honeypot="bot-field"
+          method="post"
         >
           <div>
+            <input type="hidden" name="form-name" value="contact-portfolio" />
             <div className="nombre">
               <label for="name">
                 Name
