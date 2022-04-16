@@ -14,15 +14,13 @@ const ContactForm = () => {
       .then(() => console.log("Form successfully submitted"))
       .catch((error) => alert(error));
   };
-  document
-    .querySelector("#forma-contact")
-    .addEventListener("submit", handleSubmit);
 
   return (
     <div className="formTotal">
       <h1>Leave me a message</h1>
       <section className="contact-form">
         <form
+          onSubmit={handleSubmit}
           name="contact-portfolio"
           data-netlify="true"
           method="POST"
