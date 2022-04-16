@@ -6,8 +6,7 @@ const ContactForm = () => {
     <div className="formTotal">
       <h1>Leave me a message</h1>
       <section className="contact-form">
-        <form name="contact" data-netlify="true" method="POST" id="contact">
-          <input type="hidden" name="contact" value="contact" />
+        <form name="contact-portfolio" data-netlify="true" method="POST">
           <div>
             <div className="nombre">
               <label for="name">
