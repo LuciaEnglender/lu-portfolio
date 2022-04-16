@@ -2,8 +2,6 @@ import React from "react";
 import "./ContactForm.css";
 
 const ContactForm = () => {
-  document.querySelector("form").addEventListener("submit", handleSubmit);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     let myForm = document.getElementById("forma-contact");
@@ -16,6 +14,8 @@ const ContactForm = () => {
       .then(() => console.log("Form successfully submitted"))
       .catch((error) => alert(error));
   };
+  document.querySelector("form").addEventListener("submit", handleSubmit);
+
   return (
     <div className="formTotal">
       <h1>Leave me a message</h1>
