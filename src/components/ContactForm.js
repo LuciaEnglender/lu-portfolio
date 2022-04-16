@@ -2,11 +2,29 @@ import React from "react";
 import "./ContactForm.css";
 
 const ContactForm = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let myForm = document.getElementById("form-contact");
+    let formData = new FormData(myForm);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => console.log("Form successfully submitted"))
+      .catch((error) => alert(error));
+  };
   return (
     <div className="formTotal">
       <h1>Leave me a message</h1>
       <section className="contact-form">
-        <form name="contact" data-netlify="true" method="POST">
+        <form
+          name="contact"
+          data-netlify="true"
+          method="POST"
+          id="form-contact"
+          onSubmit={handleSubmit}
+        >
           <div>
             <div className="nombre">
               <label for="name">Name</label>
