@@ -8,7 +8,7 @@ const ContactForm = () => {
       <section className="contact-form">
         <form
           name="contact"
-          data-netlify={true}
+          data-netlify="true"
           // method="POST"
           // data-netlify-honeypot="bot-field"
           // data-netlify-recaptcha="true"
