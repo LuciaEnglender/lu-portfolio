@@ -14,7 +14,9 @@ const ContactForm = () => {
       .then(() => console.log("Form successfully submitted"))
       .catch((error) => alert(error));
   };
-  document.querySelector("form").addEventListener("submit", handleSubmit);
+  document
+    .querySelector("#forma-contact")
+    .addEventListener("submit", handleSubmit);
 
   return (
     <div className="formTotal">
