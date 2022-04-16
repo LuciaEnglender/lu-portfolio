@@ -6,14 +6,7 @@ const ContactForm = () => {
     <div className="formTotal">
       <h1>Leave me a message</h1>
       <section className="contact-form">
-        <form
-          name="contact"
-          data-netlify="true"
-          // method="POST"
-          // data-netlify-honeypot="bot-field"
-          // data-netlify-recaptcha="true"
-        >
-          <input type="hidden" name="contact" value="contact" />
+        <form name="contact" data-netlify="true" method="POST">
           <div>
             <div className="nombre">
               <label for="name">Name</label>
