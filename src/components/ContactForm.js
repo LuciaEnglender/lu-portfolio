@@ -8,8 +8,8 @@ const ContactForm = () => {
       <section className="contact-form">
         <form
           name="contact-portfolio"
+          action="POST"
           data-netlify="true"
-          method="POST"
           id="forma-contact"
         >
           <div>
