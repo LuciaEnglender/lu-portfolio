@@ -2,13 +2,32 @@ import React from "react";
 import "./ContactForm.css";
 
 const ContactForm = () => {
+  document.querySelector("form").addEventListener("submit", handleSubmit);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let myForm = document.getElementById("forma-contact");
+    let formData = new FormData(myForm);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => console.log("Form successfully submitted"))
+      .catch((error) => alert(error));
+  };
   return (
     <div className="formTotal">
       <h1>Leave me a message</h1>
       <section className="contact-form">
-        <form name="contact-portfolio" method="POST" data-netlify="true">
-          <p>
-            <p className="nombre">
+        <form
+          name="contact-portfolio"
+          data-netlify="true"
+          method="POST"
+          id="forma-contact"
+        >
+          <div>
+            <div className="nombre">
               <label for="name">
                 Name
                 <input
@@ -19,8 +38,8 @@ const ContactForm = () => {
                   placeholder="Your name"
                 ></input>{" "}
               </label>
-            </p>
-            <p className="mail">
+            </div>
+            <div className="mail">
               <label for="email">
                 Email
                 <input
@@ -31,10 +50,10 @@ const ContactForm = () => {
                   placeholder="Your email"
                 ></input>
               </label>
-            </p>
-          </p>
-          <p>
-            <p className="msg">
+            </div>
+          </div>
+          <div>
+            <div className="msg">
               <label for="message">
                 Message
                 <textarea
@@ -46,8 +65,8 @@ const ContactForm = () => {
                 />
               </label>
               <input type="submit" className="boton-submit" value="Send" />
-            </p>
-          </p>
+            </div>
+          </div>
         </form>
       </section>
     </div>
