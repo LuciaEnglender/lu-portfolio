@@ -44,7 +44,7 @@ const About = () => {
         </div>
       </div>
       <div className="picture">
-        <img src={foto} />
+        <img src={foto} alt='Lucia Englender' />
       </div>
     </div>
   );
