@@ -6,7 +6,7 @@ const ContactForm = () => {
     <div className="formTotal">
       <h1>Leave me a message</h1>
       <section className="contact-form">
-        <form name="form" >
+        <form name="contact" netlify>
           <div>
             <div className="nombre">
               <label for="name">Name</label>
