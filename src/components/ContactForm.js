@@ -2,31 +2,16 @@ import React from "react";
 import "./ContactForm.css";
 
 const ContactForm = () => {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const REQUEST_PARAMETERS = {
-      method: `POST`,
-      headers: { "Content-Type": `application/x-www-form-urlencoded` },
-    };
-
-    fetch(`/`, REQUEST_PARAMETERS)
-      .then(() => {
-        console.log(`OK`);
-      })
-      .catch((error) => alert(error));
-  };
   return (
     <div className="formTotal">
       <h1>Leave me a message</h1>
       <section className="contact-form">
         <form
           name="contact"
-          netlify
-          data-netlify="true"
-          method="POST"
-          data-netlify-honeypot="bot-field"
-          data-netlify-recaptcha="true"
+          data-netlify={true}
+          // method="POST"
+          // data-netlify-honeypot="bot-field"
+          // data-netlify-recaptcha="true"
         >
           <input type="hidden" name="contact" value="contact" />
           <div>
@@ -61,12 +46,7 @@ const ContactForm = () => {
                 rows="10"
                 placeholder="Anything you want to say"
               />
-              <input
-                type="submit"
-                className="boton-submit"
-                value="Send"
-                onClick={handleSubmit}
-              />
+              <input type="submit" className="boton-submit" value="Send" />
             </div>
           </div>
         </form>
