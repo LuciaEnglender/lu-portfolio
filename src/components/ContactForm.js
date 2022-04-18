@@ -15,7 +15,7 @@ const ContactForm = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          alert("Email sended. Thank you ♥");
         },
         (error) => {
           console.log(error.text);
