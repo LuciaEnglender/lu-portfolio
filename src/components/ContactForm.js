@@ -1,6 +1,7 @@
 import React from "react";
 import "./ContactForm.css";
 import emailjs from "emailjs-com";
+import swal from "sweetalert";
 
 const ContactForm = () => {
   const sendEmail = (e) => {
@@ -15,7 +16,11 @@ const ContactForm = () => {
       )
       .then(
         (result) => {
-          alert("Email sended. Thank you ♥");
+          swal(
+            "Thank you! ♥ ",
+            "i will get back to you as soon as possible",
+            "success"
+          );
         },
         (error) => {
           console.log(error.text);
