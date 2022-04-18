@@ -7,7 +7,7 @@ const ContactForm = () => {
       <h1>Leave me a message</h1>
       <section className="contact-form">
         <form
-          // action="/thanks"
+          action="/thanks"
           name="contact-portfolio"
           data-netlify="true"
           netlify-honeypot="bot-field"
