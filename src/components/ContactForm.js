@@ -1,20 +1,34 @@
 import React from "react";
 import "./ContactForm.css";
+import emailjs from "emailjs-com";
 
 const ContactForm = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ns633ny",
+        "template_u8rbay8",
+        e.target,
+        "D0bdh-fhM3osvSYPL"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <div className="formTotal">
       <h1>Leave me a message</h1>
       <section className="contact-form">
-        <form
-          action="/thanks"
-          name="contact-portfolio"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          method="post"
-        >
+        <form onSubmit={sendEmail}>
           <div>
-            <input type="hidden" name="form-name" value="contact-portfolio" />
             <div className="nombre">
               <label for="name">
                 Name
