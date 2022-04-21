@@ -14,11 +14,15 @@ const About = () => {
           day, I acquired knowledge in{" "}
           <b>JavaScript, ReactJS, NodeJS, ExpressJS and PostgreSQL</b> as the
           main technologies wich I work with.<br></br>
+          I'm passionate about solving problems, learning new technologies and
+          mastering the ones I already know.
+          <br></br>
           Because of my previous work experience, I've gained a{" "}
-          <b>strong interpersonal and problem solving skills</b> proven through
+          <b>strong interpersonal skills</b> proven through
           customer satisfaction, as well as
           <b> team work, organization and management skills</b> due to my
           supervisor role.
+          
           <br></br>
           <br></br>
           Here are my social networks and resume.
