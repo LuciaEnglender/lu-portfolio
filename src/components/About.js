@@ -13,7 +13,7 @@ const About = () => {
           life when started studying a web developmet career in 2021. To this
           day, I acquired knowledge in{" "}
           <b>JavaScript, ReactJS, NodeJS, ExpressJS and PostgreSQL</b> as the
-          main technologies wich I work with.<br></br>
+          main technologies which I work with.<br></br>
           I'm passionate about solving problems, learning new technologies and
           mastering the ones I already know.
           <br></br>
